@@ -53,10 +53,10 @@ int main()
         cout << a[i] <<" ";
     cout << endl;
     
-int t1[]  = {8, 7, 78, 158};
+int tb[]= {8, 7, 78, 158};
    
  cout << "minimum du tableau: ";
-   cout << minT<int, 1000>(t1, 4) << endl;
+   cout << minT<int, 1000>(tb, 4) << endl;
    
     string aa="aa",bb="bb";
      swap(aa, bb);
