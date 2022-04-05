@@ -8,8 +8,8 @@ T somme(T v1, T v2)
 }
 template <class T>
 void tritab(T a[], int n) {
-    for (int i = 0; i < n - 1; i++)
-        for (int j = n - 1; i < j; j--)
+    for (int i = 0; i < n-1; i++)
+    for (int j = n-1; i < j; j--)
             if (a[j] < a[j - 1]){
             T k=a[j]; 
             a[j]=a[j - 1];
@@ -19,25 +19,24 @@ void tritab(T a[], int n) {
 }
   
 template <class T>
-void swapp(T &a, T &b)
+void swap(T &s, T &s2)
 {
-   T temp=a;
-   a=b;
-   b=temp;
+   T temp=s;
+   s=s2;
+   s2=temp;
 }
 
 
 template <class T, int max>
-int minT(T tab[], int n)
+int minT(T t[], int n)
 {
-   int m = max;
+   int  k= max;
    for (int i = 0; i < n; i++)
-      if (tab[i] < m)
-         m = tab[i];
+      if (t[i] < k)
+         k = t[i];
    
-   return m;
+   return k;
 }
-
 
 
 int main()
@@ -56,13 +55,14 @@ int main()
     
 int t1[]  = {8, 7, 78, 158};
    
- cout << " minTmum du tableau: ";
+ cout << "minimum du tableau: ";
    cout << minT<int, 1000>(t1, 4) << endl;
    
     string aa="aa",bb="bb";
-     swapp(aa, bb);
-        cout <<"\n" <<aa ;
-        cout <<"  " <<bb;
+     swap(aa, bb);
+         cout <<"SWAP"<<endl ;
+        cout <<"aa=>"<<aa ;
+        cout <<"    bb=>" <<bb;
  
  
     return 0;
